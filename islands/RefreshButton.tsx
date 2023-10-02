@@ -1,4 +1,4 @@
-import { RefreshIcon } from "@/components/icons/index.tsx";
+import { RefreshIcon } from "@/components/Icons/index.tsx";
 import { JSX } from "preact";
 
 type Props = JSX.HTMLAttributes<HTMLButtonElement>;
