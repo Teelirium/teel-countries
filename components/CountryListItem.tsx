@@ -1,6 +1,6 @@
-import { Country } from '@/types/Country.ts';
-import { classes } from '@/util/classes.ts';
-import { ComponentChildren } from 'preact';
+import { Country } from "@/types/Country.ts";
+import { classes } from "@/util/classes.ts";
+import { ComponentChildren } from "preact";
 
 type Props = {
   country: Country;
@@ -14,17 +14,17 @@ export function CountryListItem(props: Props) {
   return (
     <li
       class={classes(
-        isVisited ? 'line-through order-first opacity-60 -z-1' : '',
-        'flex gap-2 items-center'
+        isVisited ? "line-through order-first opacity-60 -z-1" : "",
+        "flex gap-2 items-center",
       )}
     >
       {index !== undefined && <span>{index}.</span>}
       <span>{country.name.common}</span>
-      <img class='w-10' src={country.flags.svg} />
+      <img class="w-10" src={country.flags.png} />
       <span>{country.cca3}</span>
       <a
         href={`https://en.wikipedia.org/wiki/${country.name.common}`}
-        class='text-blue-600'
+        class="text-blue-600"
       >
         wiki
       </a>

@@ -7,6 +7,7 @@ export type Country = {
   cca3: string;
   flags: {
     svg: string;
+    png: string;
   };
 };
 
