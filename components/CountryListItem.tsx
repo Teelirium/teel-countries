@@ -22,6 +22,7 @@ export function CountryListItem(props: Props) {
       <span>{country.name.common}</span>
       <img class="w-10" src={country.flags.png} />
       <span>{country.cca3}</span>
+      <span>{country.continents.join(", ")}</span>
       <a
         href={`https://en.wikipedia.org/wiki/${country.name.common}`}
         class="text-blue-600"

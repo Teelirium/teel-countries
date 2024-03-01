@@ -9,6 +9,7 @@ export type Country = {
     svg: string;
     png: string;
   };
+  continents: string[];
 };
 
 type CountryName = {

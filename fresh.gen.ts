@@ -2,27 +2,28 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/_app.tsx";
-import * as $2 from "./routes/api/joke.ts";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/random.tsx";
-import * as $5 from "./routes/visited.tsx";
-import * as $$0 from "./islands/RefreshButton.tsx";
+import * as $_404 from "./routes/_404.tsx";
+import * as $_app from "./routes/_app.tsx";
+import * as $api_joke from "./routes/api/joke.ts";
+import * as $index from "./routes/index.tsx";
+import * as $random from "./routes/random.tsx";
+import * as $visited from "./routes/visited.tsx";
+import * as $RefreshButton from "./islands/RefreshButton.tsx";
+import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/_404.tsx": $0,
-    "./routes/_app.tsx": $1,
-    "./routes/api/joke.ts": $2,
-    "./routes/index.tsx": $3,
-    "./routes/random.tsx": $4,
-    "./routes/visited.tsx": $5,
+    "./routes/_404.tsx": $_404,
+    "./routes/_app.tsx": $_app,
+    "./routes/api/joke.ts": $api_joke,
+    "./routes/index.tsx": $index,
+    "./routes/random.tsx": $random,
+    "./routes/visited.tsx": $visited,
   },
   islands: {
-    "./islands/RefreshButton.tsx": $$0,
+    "./islands/RefreshButton.tsx": $RefreshButton,
   },
   baseUrl: import.meta.url,
-};
+} satisfies Manifest;
 
 export default manifest;
