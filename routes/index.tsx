@@ -16,7 +16,10 @@ export default function Countries(props: PageProps) {
       <section class="max-w-screen-md mx-auto flex flex-col items-center justify-center gap-4">
         <h1 class="text-3xl font-bold">Список всех* стран**</h1>
         <ol class="flex flex-col gap-2">
-          {countries.map((c, i) => (
+          {countries.sort((a, b) => +isVisited(b) - +isVisited(a)).map((
+            c,
+            i,
+          ) => (
             <CountryListItem
               country={c}
               index={i + 1}

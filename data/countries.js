@@ -1,3 +1,4 @@
+/** @type {Country[]} */
 export default [
   {
     "name": {

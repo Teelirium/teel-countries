@@ -14,7 +14,7 @@ export function CountryListItem(props: Props) {
   return (
     <li
       class={classes(
-        isVisited ? "line-through order-first opacity-60 -z-1" : "",
+        isVisited ? "line-through opacity-60 -z-1" : "",
         "flex gap-2 items-center",
       )}
     >
