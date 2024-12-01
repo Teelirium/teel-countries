@@ -2,12 +2,11 @@ import { PageProps } from "$fresh/server.ts";
 import { CountryListItem } from "@/components/CountryListItem.tsx";
 import { Layout } from "@/components/Layout.tsx";
 import countries from "@/data/countries.js";
-import visited from "@/data/visited.js";
+import { VISITED_COUNTRIES } from "@/data/visited.js";
 import { Country } from "@/types/Country.ts";
-import { classes } from "@/util/classes.ts";
 
 function isVisited(country: Country): boolean {
-  return visited.some((v) => v[1] === country.cca3);
+  return VISITED_COUNTRIES.some((visited) => visited[2] === country.cca3);
 }
 
 export default function Countries(props: PageProps) {
@@ -17,13 +16,13 @@ export default function Countries(props: PageProps) {
         <h1 class="text-3xl font-bold">Список всех* стран**</h1>
         <ol class="flex flex-col gap-2">
           {countries.sort((a, b) => +isVisited(b) - +isVisited(a)).map((
-            c,
-            i,
+            country,
+            idx,
           ) => (
             <CountryListItem
-              country={c}
-              index={i + 1}
-              isVisited={isVisited(c)}
+              country={country}
+              index={idx + 1}
+              isVisited={isVisited(country)}
             />
           ))}
         </ol>

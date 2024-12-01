@@ -15,7 +15,7 @@ export function CountryListItem(props: Props) {
     <li
       class={classes(
         isVisited ? "line-through opacity-60 -z-1" : "",
-        "flex gap-2 items-center",
+        "flex gap-2 items-center justify-between",
       )}
     >
       {index !== undefined && <span>{index}.</span>}
