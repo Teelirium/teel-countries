@@ -11,6 +11,7 @@ type Props = {
 
 export function CountryListItem(props: Props) {
   const { country, isVisited = false, index, children } = props;
+
   return (
     <li
       class={classes(

@@ -9,7 +9,7 @@ import * as $index from "./routes/index.tsx";
 import * as $random from "./routes/random.tsx";
 import * as $visited from "./routes/visited.tsx";
 import * as $RefreshButton from "./islands/RefreshButton.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

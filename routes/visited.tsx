@@ -14,7 +14,7 @@ export default function Visited(props: PageProps) {
             const country = countries.find((c) => c.cca3 === code);
 
             const date = new Date();
-            date.setFullYear(+year, +month, 1);
+            date.setFullYear(+year, +month - 1, 1);
 
             return (
               <>
