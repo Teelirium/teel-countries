@@ -1,4 +1,5 @@
 export const VISITED_COUNTRIES = [
+  ["2025", "12", "KNA"],
   ["2025", "11", "BLZ"],
   ["2025", "10", "HTI"],
   ["2025", "09", "PAN"],
